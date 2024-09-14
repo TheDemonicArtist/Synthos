@@ -24,6 +24,7 @@ let sheetPages = {
     pokedex: "pokedex",
     trainers: "trainers",
     undesigned: "undesigned",
+    undesignede: "undesignede",
 }
 
 
