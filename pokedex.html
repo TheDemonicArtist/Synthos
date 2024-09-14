@@ -65,7 +65,7 @@
     <!-- --------------------------------------------------------------------
     <-- Masterlist
     <-------------------------------------------------------------------- -->
-    <div class="container-lg softload masterlist-container" id="main-container">
+    <div class="container softload masterlist-container" id="main-container">
 
 
         <!-- Gallery Container
@@ -77,7 +77,7 @@
             ----------------------------------------------------------------- -->
             <div class="card p-md-5 p-4 mb-4">
 
-                <h3 class="mb-0"><a href="daycare.html">Daycare</a></h3>
+                <h3 class="mb-0"><a href="masterlist.html">Species Masterlist</a></h3>
 
                 <!-- Faux Folders
                 <-- Remove this if you'd like to make your own buttons instead!
@@ -166,18 +166,11 @@
 
         <!-- Gallery Items
         ------------------------------------------------------------------- -->
-        <li class="col-lg-4 col-sm-6 p-2" id="charadex-entries">
+        <li class="col-lg-3 col-sm-6 p-2" id="charadex-entries">
             <a class="card h-100 cardlink" href="">
                 <h5 class="card-header text-center design"></h5>
                 <div class="card-body d-flex flex-fill">
-                    <div class="row no-gutters">
-                    <div class="col-md-6 p-2">
-                    <img class="image1 img-fluid m-auto" src="" oncontextmenu="return false">
-                    </div>
-                    <div class="col-md-6 p-2">
-                        <img class="image2 img-fluid m-auto" src="" oncontextmenu="return false">
-                        </div>
-                </div>
+                    <img class="image img-fluid m-auto" src="" oncontextmenu="return false">
                 </div>
             </a>
         </li>
@@ -195,6 +188,11 @@
                     <a class="cardlink design"></a> (<a class="cardlinkalt" href="">#<span class="id"></span></a>)
                 </h2>
 
+                <h2 class="text-center p-4">
+                    <a class="cardlink name"></a>
+                </h2>
+
+
 
                 <!--Main Info -->
                 <div class="px-md-5 pt-md-5 p-4">
@@ -202,25 +200,26 @@
                     <!-- Character Info -->
                     <div class="row no-gutters">
 
+
                         <!-- Image -->
-                        <div class="col-md-6 p-3">
+                        <div class="col-md-12 p-3">
                             <div class="mx-auto w-100 text-center" oncontextmenu="return false">
-                                <img class="image1 img-fluid" src="">
-                            </div>
-                        </div>
-                        <!-- Image -->
-                        <div class="col-md-6 p-3">
-                            <div class="mx-auto w-100 text-center" oncontextmenu="return false">
-                                <img class="image2 img-fluid" src="">
+                                <img class="image img-fluid" src="">
                             </div>
                         </div>
 
 
                         <!-- Information List -->
                         <div class="col-md-12 p-3">
+                            <div class="row no-gutters">
+                            <!-- Item -->
+                            <div class="col-md-12 d-flex justify-content-between mb-2 pr-2">
+                                <b class="text-muted">Artist</b>
+                                <span class="artist"></span>
+                            </div>
 
                             <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
+                            <div class="col-md-12 d-flex justify-content-between mb-2">
                                 <b class="text-muted">Designer</b>
                                 <span class="designer"></span>
                             </div>
@@ -228,43 +227,27 @@
                             <hr>
 
                             <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
+                            <div class="col-md-12 d-flex justify-content-between mb-2">
                                 <b class="text-muted">Species</b>
                                 <span class="species"></span>
                             </div>
 
                             <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Pokeball</b>
-                                <span class="pokeball"></span>
+                            <div class="col-md-12 d-flex justify-content-between mb-2">
+                                <b class="text-muted">Types</b>
+                                <span class="type1"></span><span class="type2"></span>
                             </div>
 
                             <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
+                            <div class="col-md-12 d-flex justify-content-between mb-2 mr-2">
                                 <b class="text-muted">Design Type</b>
                                 <span class="designtype"></span>
                             </div>
 
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Price</b>
-                                <span>Seaglass<span class="price"></span>
-                            </div>
-
                             <hr>
 
                             <!-- Item -->
-                            <div class="">
-                                <b class="text-muted">Traits</b>
-                                <div class="pl-3 text-pre row no-gutters">
-                                    <div class="trait1"></div>, <div class="trait2"></div>
-                                </div>
-                            </div>
-
-                            <hr>
-
-                            <!-- Item -->
-                            <div class="">
+                            <div class="col-md-12">
                                 <b class="text-muted">Notes</b>
                                 <div class="pl-3 text-pre notes"></div>
                             </div>
@@ -272,6 +255,7 @@
                             <!-- Add more list items above this line-->
                         </div>
                     </div>
+                </div>
 
                     <!-- Where to Update -->
                     <div class="card bg-faded py-2 px-3 mt-3 small text-center">
@@ -300,7 +284,7 @@
     <!-- Charadex Script -->
     <script src="styles/config.js"></script>
     <script src="styles/charadex.js"></script>
-    <script>masterlist(options.daycare);</script>
+    <script>masterlist(options.pokedex);</script>
 
 
 </body>
