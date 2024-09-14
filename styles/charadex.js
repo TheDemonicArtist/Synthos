@@ -161,9 +161,10 @@ let sheetArrayKeys = (arr) => {
     if (itemArray.indexOf('cardlinkalt')) itemArray[itemArray.indexOf('cardlinkalt')] = { name: 'cardlinkalt', attr: 'href' };
     if (itemArray.indexOf('link')) itemArray[itemArray.indexOf('link')] = { name: 'link', attr: 'href' };
     if (itemArray.indexOf('image')) itemArray[itemArray.indexOf('image')] = { name: 'image', attr: 'src' };
+    if (itemArray.indexOf('image1')) itemArray[itemArray.indexOf('image1')] = { name: 'image1', attr: 'src' };
+    if (itemArray.indexOf('image2')) itemArray[itemArray.indexOf('image2')] = { name: 'image2', attr: 'src' };
     return itemArray;
 };
-
 
 /* ================================================================ */
 /* Pagination
@@ -555,6 +556,22 @@ const inventory = async (options) => {
                     inventoryItemArr.push(inventoryItems);
                 };
             }
+        });
+
+        // Fetch item info from the item sheet
+        let designSheetArr = await fetchSheet(charadexInfo.designSheetPage);
+        let designArr = [];
+        designSheetArr.forEach((i) => {
+            if (singleCard.username == i.owner) {
+                let designs = {
+                    type: 'Pokemon Case',
+                    item: i.design,
+                    image: i.image,
+                    itemlink: folderURL + "/masterlist.html?design=" + i.design,
+                    amount: '',
+                };
+                designArr.push(designs);
+            };
         });
 
         // Sort items by type if applicable
