@@ -2,7 +2,7 @@
 /* Sheet ID
 /* Your sheet ID
 /* ------------------------------------------------------------------- */
-let sheetID = "1E_ueOocuvMdo8XN0EQC1sG0T3c4t951R86x9IO2QuRk";
+let sheetID = "10OUtIDKFg6aAvw04nso9cciLV0gmvqt5Mt3k4-G8waE";
 
 
 /* ------------------------------------------------------------------- */
@@ -19,7 +19,8 @@ let sheetPages = {
     prompts: "prompts",
     faq: "faq",
     staff: "mods",
-
+    styles: "styles",
+    daycare: "daycare",
 }
 
 
@@ -61,6 +62,21 @@ let options = {
 
     },
 
+    /* Daycare
+    /* --------------------------------------------------------------- */
+    daycare: {
+
+        sheetPage: sheetPages.daycare,
+
+        itemAmount: 12,
+        itemOrder: "desc",
+
+        filterColumn: 'Design Type',
+        searchFilterParams: ['ID','Species', 'Designer'],
+        fauxFolderColumn: 'Character Type',
+
+    },
+
 
     /* Item Catalogue
     /* --------------------------------------------------------------- */
@@ -77,19 +93,35 @@ let options = {
     
     },
 
+    /* User Inventory
+    /* --------------------------------------------------------------- */
+    Userinventory: {
 
-    /* Invetory
+        sheetPage: inventorysheetPages.inventory,
+        itemSheetPage: inventorysheetPages.userinventory,
+        designSheetPage: sheetPages.masterlist,
+        logSheetPage: inventorysheetPages.inventoryLog,
+    
+        itemAmount: 24,
+        sortTypes: ['Currency', 'Pokeball', 'Guardian', 'Crafting', 'Misc'],
+        
+        searchFilterParams: ['Username']
+    
+    },
+
+    /* Inventory
     /* --------------------------------------------------------------- */
     inventory: {
 
         sheetPage: sheetPages.inventory,
         itemSheetPage: sheetPages.items,
+        designSheetPage: sheetPages.masterlist,
         logSheetPage: sheetPages.inventoryLog,
     
         itemAmount: 24,
-        sortTypes: ['Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
+        sortTypes: ['Currency', 'Pokeball', 'Guardian', 'Crafting', 'Misc'],
         
-        searchFilterParams: ['Username'],
+        searchFilterParams: ['Username']
     
     },
 
@@ -120,6 +152,21 @@ let options = {
         filterColumn: 'Rarity',
         searchFilterParams: ['Trait'],
         fauxFolderColumn: 'Type',
+    
+    },
+
+    /* Styles
+    /* --------------------------------------------------------------- */
+    styles: {
+    
+        sheetPage: sheetPages.styles,
+
+        itemAmount: 24,
+        itemOrder: "asc",
+
+        filterColumn: 'Obtained By',
+        searchFilterParams: ['Obtained By'],
+        fauxFolderColumn: 'Obtained By',
     
     },
 
