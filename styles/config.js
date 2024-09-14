@@ -10,7 +10,7 @@ let sheetID = "10OUtIDKFg6aAvw04nso9cciLV0gmvqt5Mt3k4-G8waE";
 /* ------------------------------------------------------------------- */
 let sheetPages = {
 
-    masterlist: "masterlist",
+    masterlist: "pokemon",
     masterlistLog: "masterlist log",
     inventory: "inventory",
     inventoryLog: "inventory log",
@@ -21,6 +21,9 @@ let sheetPages = {
     staff: "mods",
     styles: "styles",
     daycare: "daycare",
+    pokedex: "pokedex",
+    trainers: "trainers",
+    undesigned: "undesigned",
 }
 
 
@@ -77,6 +80,50 @@ let options = {
 
     },
 
+    /* Pokedex
+    /* --------------------------------------------------------------- */
+    pokedex: {
+
+        sheetPage: sheetPages.pokedex,
+
+        itemAmount: 12,
+        itemOrder: "desc",
+
+        filterColumn: 'Design Type',
+        searchFilterParams: ['ID','Species', 'Designer'],
+        fauxFolderColumn: 'Character Type',
+
+    },
+
+    /* Pokedex
+    /* --------------------------------------------------------------- */
+    undesigned: {
+
+        sheetPage: sheetPages.undesigned,
+
+        itemAmount: 12,
+        itemOrder: "desc",
+
+        filterColumn: 'Design Type',
+        searchFilterParams: ['ID','Species', 'Designer'],
+        fauxFolderColumn: 'Character Type',
+
+    },
+
+    /* Trainers
+    /* --------------------------------------------------------------- */
+    trainers: {
+
+        sheetPage: sheetPages.trainers,
+
+        itemAmount: 12,
+        itemOrder: "desc",
+
+        filterColumn: 'division',
+        searchFilterParams: ['ID','Species','Designer','Division'],
+        fauxFolderColumn: 'Character Type',
+
+    },
 
     /* Item Catalogue
     /* --------------------------------------------------------------- */
@@ -93,21 +140,6 @@ let options = {
     
     },
 
-    /* User Inventory
-    /* --------------------------------------------------------------- */
-    Userinventory: {
-
-        sheetPage: inventorysheetPages.inventory,
-        itemSheetPage: inventorysheetPages.userinventory,
-        designSheetPage: sheetPages.masterlist,
-        logSheetPage: inventorysheetPages.inventoryLog,
-    
-        itemAmount: 24,
-        sortTypes: ['Currency', 'Pokeball', 'Guardian', 'Crafting', 'Misc'],
-        
-        searchFilterParams: ['Username']
-    
-    },
 
     /* Inventory
     /* --------------------------------------------------------------- */
@@ -115,7 +147,7 @@ let options = {
 
         sheetPage: sheetPages.inventory,
         itemSheetPage: sheetPages.items,
-        designSheetPage: sheetPages.masterlist,
+        designSheetPage: sheetPages.pokemon,
         logSheetPage: sheetPages.inventoryLog,
     
         itemAmount: 24,

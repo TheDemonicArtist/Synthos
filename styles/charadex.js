@@ -567,7 +567,7 @@ const inventory = async (options) => {
                     type: 'Pokemon Case',
                     item: i.design,
                     image: i.image,
-                    itemlink: folderURL + "/masterlist.html?design=" + i.design,
+                    itemlink: folderURL + "/masterlist.html?id=" + i.design,
                     amount: '',
                 };
                 designArr.push(designs);
