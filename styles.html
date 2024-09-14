@@ -55,6 +55,7 @@
     <!-- --------------------------------------------------------------------
     <-- Header
     <-------------------------------------------------------------------- -->
+    
     <div class="load-html" id="header" data-source="includes/header.html"></div>
 
 
@@ -77,7 +78,7 @@
             ----------------------------------------------------------------- -->
             <div class="card p-md-5 p-4 mb-4">
 
-                <h3 class="mb-0"><a href="masterlist.html">Species Masterlist</a></h3>
+                <h3 class="mb-0"><a href="styles.html">Style Catalogue</a></h3>
 
                 <!-- Faux Folders
                 <-- Remove this if you'd like to make your own buttons instead!
@@ -120,15 +121,6 @@
                     </div>
                 </div>
 
-                <!-- Prev & Next Topbar -->
-                <div style="display: none;" id="prevNext">
-                    <hr class="mb-4">
-                    <div class="row no-gutters px-2 mb-n3 font-weight-bold text-uppercase">
-                        <div class="col-6 px-1"><a id="entryPrev" href=""><i class="fa fa-chevron-left mr-2"></i><span></span></a></div>
-                        <div class="col-6 px-1 text-right order-md-1"><a id="entryNext" href=""><span></span><i class="fa fa-chevron-right ml-2"></i></a></div>
-                    </div>
-                </div>
-
             </div>
 
 
@@ -141,12 +133,11 @@
     </div>
 
 
-
     <!-- --------------------------------------------------------------------
     <-- Footer
     <-------------------------------------------------------------------- -->
+    
     <div class="load-html" id="footer" data-source="includes/footer.html"></div>
-
 
 
     <!-- --------------------------------------------------------------------
@@ -168,7 +159,7 @@
         ------------------------------------------------------------------- -->
         <li class="col-lg-3 col-sm-6 p-2" id="charadex-entries">
             <a class="card h-100 cardlink" href="">
-                <h5 class="card-header text-center design"></h5>
+                <h5 class="card-header text-center style"></h5>
                 <div class="card-body d-flex flex-fill">
                     <img class="image img-fluid m-auto" src="" oncontextmenu="return false">
                 </div>
@@ -184,118 +175,45 @@
             <div class="card">
 
                 <!-- Header -->
-                <h2 class="card-header text-center p-4">
-                    <a class="cardlink design"></a> (<a class="cardlinkalt" href="">#<span class="id"></span></a>)
-                </h2>
-
-                <h2 class="text-center p-4">
-                    <a class="cardlink name"></a>
-                </h2>
-
+                <h2 class="card-header text-center p-4 style"></h2>
 
 
                 <!--Main Info -->
-                <div class="px-md-5 pt-md-5 p-4">
-                    
-                    <!-- Character Info -->
-                    <div class="row no-gutters">
+                <div class="row no-gutters p-md-5 p-4">
 
 
-                        <!-- Image -->
-                        <div class="col-md-12 p-3">
-                            <div class="mx-auto w-100 text-center" oncontextmenu="return false">
-                                <img class="image img-fluid" src="">
-                            </div>
-                        </div>
-
-
-                        <!-- Information List -->
-                        <div class="col-md-12 p-3">
-                            <div class="row no-gutters">
-
-                            <!-- Item -->
-                            <div class="col-md-4 d-flex justify-content-between mb-2 pr-2">
-                                <b class="text-muted">Owner</b>
-                                <span class="owner"></span>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="col-md-4 d-flex justify-content-between mb-2 pr-2">
-                                <b class="text-muted">Artist</b>
-                                <span class="artist"></span>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="col-md-4 d-flex justify-content-between mb-2">
-                                <b class="text-muted">Designer</b>
-                                <span class="designer"></span>
-                            </div>
-
-                            <hr>
-
-                            <!-- Item -->
-                            <div class="col-md-6 d-flex justify-content-between mb-2">
-                                <b class="text-muted">Species</b>
-                                <span class="species"></span>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="col-md-6 d-flex justify-content-between mb-2 mr-2">
-                                <b class="text-muted">Rarity</b>
-                                <span class="rarity"></span>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="col-md-6 d-flex justify-content-between mb-2 mr-2">
-                                <b class="text-muted">Design Type</b>
-                                <span class="designtype"></span>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="col-md-6 d-flex justify-content-between mb-2">
-                                <b class="text-muted">Rank</b>
-                                <span class="rank"></span>
-                            </div>
-
-                            <hr>
-
-                            <!-- Item -->
-                            <div class="col-md-12">
-                                <b class="text-muted">Traits</b>
-                                <div class="pl-3 text-pre traits"></div>
-                            </div>
-
-                            <hr>
-
-                            <!-- Item -->
-                            <div class="col-md-12">
-                                <b class="text-muted">Notes</b>
-                                <div class="pl-3 text-pre notes"></div>
-                            </div>
-
-                            <hr>
-
-                            <!-- Item -->
-                            <div class="col-md-12">
-                                <b class="text-muted">Transaction Log</b>
-                                <div class="pl-3 pt-2 small" id="log-table">
-                                    <div class="d-none">
-                                        <div class="row no-gutters" id="log-entry">
-                                            <div class="col-md-3"><span class="timestamp"></span></div>
-                                            <div class="col-md-9"><span class="reason"></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Add more list items above this line-->
+                    <!-- Image -->
+                    <div class="col-md-4 p-3">
+                        <div class="mx-auto w-100 text-center" oncontextmenu="return false">
+                            <img class="image img-fluid" src="">
                         </div>
                     </div>
-                </div>
 
-                    <!-- Where to Update -->
-                    <div class="card bg-faded py-2 px-3 mt-3 small text-center">
-                        <b>If you need to update this entry, please do so <a href="">here</a>.</b>
+
+                    <!-- Information List -->
+                    <div class="col-md-8 p-3">
+
+                        <!-- Item -->
+                        <div class="d-flex justify-content-between mb-2">
+                            <b class="text-muted">Price</b>
+                            <span class="price"> Seaglass</span>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="d-flex justify-content-between mb-2">
+                            <b class="text-muted">Obtained By</b>
+                            <span class="obtainedby"></span>
+                        </div>
+
+                        <hr>
+
+                        <!-- Item -->
+                        <div class="">
+                            <b class="text-muted">Description</b>
+                            <div class="pl-4 text-pre description"></div>
+                        </div>
+
+                        <!-- Add more list items above this line-->
                     </div>
                 </div>
             </div>
@@ -303,6 +221,7 @@
 
 
     </div>
+
 
     <!-- ----------------------------------------------------------------- -->
     <!-- JS                                                                -->
@@ -320,7 +239,7 @@
     <!-- Charadex Script -->
     <script src="styles/config.js"></script>
     <script src="styles/charadex.js"></script>
-    <script>masterlist(options.masterlist);</script>
+    <script>charadexLarge(options.styles);</script>
 
 
 </body>

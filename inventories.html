@@ -66,7 +66,7 @@
     <!-- --------------------------------------------------------------------
     <-- Masterlist
     <-------------------------------------------------------------------- -->
-    <div class="container softload masterlist-container" id="main-container">
+    <div class="container-lg softload masterlist-container" id="main-container">
 
 
         <!-- Gallery Container
@@ -120,6 +120,15 @@
 
         </div>
 
+            </div>
+
+
+            <!-- Repeated Items Render Here
+            ----------------------------------------------------------------- -->
+            <ul class="row no-gutters list list-unstyled m-n2"></ul>
+
+        </div>
+
     </div>
 
 
@@ -165,6 +174,28 @@
 
                     <!-- Each section -->
                     <div class="mt-md-5 mt-4" id="item-list-section">
+                        <h5 id="item-list-header"></h5>
+                        <div class="row no-gutters m-n2" id="item-list-row"></div>
+                    </div>
+
+                    <!-- Each section's items -->
+                    <div class="col-md-3 col-4 p-1" id="item-list-col">
+                        
+                            <a class="btn btn-primary d-block itemlink" href="">
+                                <span class="item"></span><span class="amount"></span>
+                            </a>
+                        
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!-- Item sections -->
+                <div class="d-none">
+
+                    <!-- Each section -->
+                    <div class="mt-md-5 mt-4" id="item-list-section">
                         <h4 id="item-list-header"></h4>
                         <div class="row no-gutters m-n2" id="item-list-row"></div>
                     </div>
@@ -174,7 +205,7 @@
                         <div class="card d-block text-center bg-faded p-2">
                             <img class="item-img img-fluid gallery-img" src="">
                             <a class="btn btn-primary d-block mt-3 itemlink" href="">
-                                <span class="item"></span> x<span class="amount"></span>
+                                <span class="item"></span><span class="amount"></span>
                             </a>
                         </div>
                     </div>
